@@ -1,7 +1,5 @@
-.container {
-  max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+.hide {
+  display: none !important;
 }
 
 body {
@@ -13,6 +11,7 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 h1,
 h2,
 h3,
@@ -60,17 +59,24 @@ img {
   margin: -1px;
 }
 
-section {
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
-.section-title {
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
 }
 
-.logo {
-  display: inline-flex;
-  align-items: center;
-}
-
-.social-icon {
-  color: #f4f4fd;
+@media screen and (min-width: 1158px) {
+  .container {
+    padding: 0 15px;
+    max-width: 1158px;
+  }
 }
