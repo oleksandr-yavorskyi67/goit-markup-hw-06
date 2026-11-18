@@ -59,6 +59,15 @@ img {
   margin: -1px;
 }
 
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.social-icon {
+  color: #f4f4fd;
+}
+
 .container {
   max-width: 320px;
   margin: 0 auto;
