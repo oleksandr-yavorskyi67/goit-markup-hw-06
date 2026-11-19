@@ -25,6 +25,7 @@
   .footer-container {
     flex-wrap: nowrap;
     padding: 0;
+    gap: 0;
   }
 }
 
