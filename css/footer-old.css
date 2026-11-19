@@ -1,23 +1,9 @@
-.footer-container {
-  display: flex;
-}
-
 .footer-desc {
   margin-top: 16px;
-}
-
-.footer-wrapper {
-  max-width: 264px;
-  margin-right: 120px;
 }
 
 .footer-social {
   display: flex;
   gap: 16px;
   flex-direction: column;
-}
-
-.footer-form {
-  display: flex;
-  gap: 24px;
 }
