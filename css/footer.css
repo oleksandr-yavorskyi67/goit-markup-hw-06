@@ -19,6 +19,7 @@
 @media only screen and (min-width: 768px) {
   .footer-container {
     gap: 72px 24px;
+    flex-direction: row;
   }
 }
 
@@ -73,7 +74,7 @@
 
 .footer-social {
 }
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 1157.98px) {
   .footer-social {
     display: flex;
     flex-direction: column;
