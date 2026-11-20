@@ -73,15 +73,12 @@
 }
 
 .footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
-@media only screen and (max-width: 1157.98px) {
-  .footer-social {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-}
+
 .social-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
