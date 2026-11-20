@@ -24,14 +24,23 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   border-radius: 4px;
-  padding: 72px 24px 24px;
-  width: 408px;
-  min-height: 582px;
+  padding: 72px 16px 24px;
+  max-width: 288px;
+  width: 90%;
   background-color: #fcfcfc;
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    padding: 72px 24px 24px;
+    width: 408px;
+    height: 582px;
+    max-width: 408px;
+  }
 }
 
 .modal-btn {

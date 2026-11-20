@@ -15,14 +15,40 @@
   max-width: 100%;
   height: auto;
   background-color: #2e2f42;
-  padding: 188px 0;
+
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero/hero-bg.jpg);
+    image-set(
+      '../images/hero/hero-bg_mob.jpg' 1x,
+      '../images/hero/hero-bg_mob@2x.jpg' 2x
+    );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
+@media only screen and (min-width: 768px) {
+  .hero-wrapper {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      image-set(
+        '../images/hero/hero-bg_tab.jpg' 1x,
+        '../images/hero/hero-bg_tab@2x.jpg' 2x
+      );
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero-wrapper {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      image-set(
+        '../images/hero/hero-bg_desc.jpg' 1x,
+        '../images/hero/hero-bg_desc@2x.jpg' 2x
+      );
+  }
+}
+
 .hero .container {
   padding: 0 15px;
 }

@@ -130,7 +130,15 @@
           <h2 class="team-title section-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img src="./images/team-1.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                srcset="
+                  ./images/team/team-1.jpg    1x,
+                  ./images/team/team-1@2x.jpg 2x
+                "
+                src="./images/team/team-1.jpg"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="team-wrapper">
                 <h3 class="team-subtitle">Mark Guerrero</h3>
                 <p class="team-desc">Product Designer</p>
@@ -169,7 +177,15 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/team-2.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="
+                  ./images/team/team-2.jpg    1x,
+                  ./images/team/team-2@2x.jpg 2x
+                "
+                src="./images/team/team-2.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="team-wrapper">
                 <h3 class="team-subtitle">Tom Ford</h3>
                 <p class="team-desc">Frontend Developer</p>
@@ -208,7 +224,15 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/team-3.jpg" alt="Camila Garcia" width="264" />
+              <img
+                srcset="
+                  ./images/team/team-3.jpg    1x,
+                  ./images/team/team-3@2x.jpg 2x
+                "
+                src="./images/team/team-3.jpg"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="team-wrapper">
                 <h3 class="team-subtitle">Camila Garcia</h3>
                 <p class="team-desc">Marketing</p>
@@ -247,7 +271,15 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/team-4.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                srcset="
+                  ./images/team/team-4.jpg    1x,
+                  ./images/team/team-4@2x.jpg 2x
+                "
+                src="./images/team/team-4.jpg"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="team-wrapper">
                 <h3 class="team-subtitle">Daniel Wilson</h3>
                 <p class="team-desc">UI Designer</p>
@@ -296,7 +328,11 @@
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/portfolio-1.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-1.jpg    1x,
+                    ./images/portfolio/portfolio@2x-1.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio-1.jpg"
                   width="360"
                   alt="Banking App"
                 />
@@ -317,7 +353,11 @@
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/portfolio-2.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-2.jpg    1x,
+                    ./images/portfolio/portfolio@2x-2.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio-2.jpg"
                   alt="Cashless Payment"
                   width="360"
                 />
@@ -338,8 +378,12 @@
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/portfolio-3.jpg"
-                  alt="Meditation App"
+                  srcset="
+                    ./images/portfolio/portfolio-3.jpg    1x,
+                    ./images/portfolio/portfolio@2x-3.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio-3.jpg"
+                  alt="Meditation App2"
                   width="360"
                 />
 
@@ -360,7 +404,11 @@
               <div class="portfolio-image-wrapper">
                 <img
                   class="overlay-image"
-                  src="./images/portfolio-4.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-4.jpg    1x,
+                    ./images/portfolio/portfolio@2x-4.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio-4.jpg"
                   alt="Taxi Service"
                   width="360"
                 />
@@ -381,7 +429,11 @@
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/portfolio-5.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-5.jpg    1x,
+                    ./images/portfolio/portfolio@2x-5.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio-5.jpg"
                   alt="Screen Illustrations"
                   width="360"
                 />
@@ -402,7 +454,11 @@
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/portfolio-6.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-6.jpg    1x,
+                    ./images/portfolio/portfolio@2x-6.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio-6.jpg"
                   alt="Online Courses"
                   width="360"
                 />
@@ -488,7 +544,75 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open hide" id="modal">
+    <div id="mobile-menu" class="mobile-menu is-open">
+      <div class="mobile-container container">
+        <button class="modal-btn" type="button" aria-label="Close modal button">
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link active" href="#features">Features</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="#team">Team</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-adress">
+          <ul class="adress-list">
+            <li class="adress-item">
+              <a class="adress-text active" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="adress-item">
+              <a class="adress-text" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="social-list-mobile-menu">
+          <li class="mobile-social-item">
+            <a class="social-background" href=""
+              ><svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-item">
+            <a class="social-background" href=""
+              ><svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-item">
+            <a class="social-background" href=""
+              ><svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-item">
+            <a class="social-background" href=""
+              ><svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="backdrop is-open" id="modal">
       <div class="modal" id="modal-form">
         <button class="modal-btn" type="button" aria-label="Close modal button">
           <svg class="modal-btn-icon" width="8" height="8">
