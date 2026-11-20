@@ -79,7 +79,7 @@
     letter-spacing: 0.04em;
   }
 }
-.adress-text {
+.adress-item.adress-text {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -90,14 +90,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .adress-text {
+  .adress-item.adress-text {
     font-weight: 400;
     font-size: 12px;
   }
 }
 
 @media only screen and (min-width: 1158px) {
-  .adress-text {
+  .adress-item.adress-text {
     font-size: 16px;
   }
 }

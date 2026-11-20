@@ -165,7 +165,7 @@
   border-radius: 4px;
   padding: 8px 16px;
   width: 100%;
-  max-width: 264px;
+
   height: 40px;
   outline: transparent;
   background-color: inherit;
@@ -182,6 +182,7 @@
 @media only screen and (min-width: 768px) {
   .footer_form_input {
     margin-bottom: 0;
+    max-width: 264px;
   }
 }
 
