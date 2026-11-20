@@ -6,13 +6,15 @@
   height: 100%;
   background-color: #fff;
 
-  transform: translateX(100%);
+  opacity: 0;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transform;
+  transition-property: opacity, visibility;
 }
 
 .mobile-menu.is-open {
-  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
 }
 
 @media only screen and (min-width: 768px) {
@@ -55,6 +57,7 @@
 }
 
 .mobile-adress {
+  font-style: normal;
   margin-bottom: 48px;
 }
 .adress-list {
@@ -63,13 +66,32 @@
   gap: 24px;
 }
 
+@media only screen and (min-width: 768px) {
+  .adress-list {
+    gap: 12px;
+  }
+}
 .adress-text {
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+@media only screen and (min-width: 768px) {
+  .adress-text {
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .adress-text {
+    font-size: 16px;
+  }
 }
 .adress-text.active {
   color: #4d5ae5;

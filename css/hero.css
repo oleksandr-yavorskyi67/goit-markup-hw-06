@@ -12,9 +12,10 @@
   }
 }
 .hero-wrapper {
-  max-width: 100%;
+  max-width: 1440px;
   height: auto;
   background-color: #2e2f42;
+  margin: 0 auto;
 
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
